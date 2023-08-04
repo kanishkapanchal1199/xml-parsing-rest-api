@@ -1,0 +1,501 @@
+{
+	"info": {
+		"_postman_id": "c05e07bb-9574-4e26-bb68-434516fe089a",
+		"name": "xml-parsing-url-get-records",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28535146"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/xml/xml-content",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/xml/xml-content",
+				"description": "To Get All records inserted into database."
+			},
+			"response": [
+				{
+					"name": "response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/xml/xml-content"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 03 Aug 2023 22:23:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"content\": [\n        {\n            \"id\": 1,\n            \"newspaperName\": \"London Times\",\n            \"width\": 1250,\n            \"height\": 850,\n            \"dpi\": 200,\n            \"uploadTime\": \"2023-07-29T11:34:34.057\",\n            \"filename\": \"newspaper2.xml\"\n        },\n        {\n            \"id\": 2,\n            \"newspaperName\": \"abb\",\n            \"width\": 1280,\n            \"height\": 752,\n            \"dpi\": 160,\n            \"uploadTime\": \"2023-07-29T11:35:01.472\",\n            \"filename\": \"newspaper.xml\"\n        },\n        {\n            \"id\": 3,\n            \"newspaperName\": \"Times of India\",\n            \"width\": 800,\n            \"height\": 600,\n            \"dpi\": 300,\n            \"uploadTime\": \"2023-07-29T14:54:30.366\",\n            \"filename\": \"newspaper6.xml\"\n        },\n        {\n            \"id\": 4,\n            \"newspaperName\": \"London Times\",\n            \"width\": 1250,\n            \"height\": 850,\n            \"dpi\": 200,\n            \"uploadTime\": \"2023-07-29T14:54:43.923\",\n            \"filename\": \"newspaper2.xml\"\n        },\n        {\n            \"id\": 5,\n            \"newspaperName\": \"New York Times\",\n            \"width\": 1024,\n            \"height\": 768,\n            \"dpi\": 300,\n            \"uploadTime\": \"2023-07-29T14:55:01.773\",\n            \"filename\": \"newspaper3.xml\"\n        },\n        {\n            \"id\": 6,\n            \"newspaperName\": \"The Wall Street Journal\",\n            \"width\": 600,\n            \"height\": 800,\n            \"dpi\": 200,\n            \"uploadTime\": \"2023-07-29T14:55:12.59\",\n            \"filename\": \"newspaper11.xml\"\n        },\n        {\n            \"id\": 7,\n            \"newspaperName\": \"The Times of London\",\n            \"width\": 1440,\n            \"height\": 1920,\n            \"dpi\": 300,\n            \"uploadTime\": \"2023-07-29T14:55:17.507\",\n            \"filename\": \"newspaper8.xml\"\n        },\n        {\n            \"id\": 8,\n            \"newspaperName\": \"The Times of London\",\n            \"width\": 1440,\n            \"height\": 1920,\n            \"dpi\": 300,\n            \"uploadTime\": \"2023-07-29T19:27:18.214\",\n            \"filename\": \"newspaper8.xml\"\n        },\n        {\n            \"id\": 9,\n            \"newspaperName\": \"The Times of London\",\n            \"width\": 1440,\n            \"height\": 1920,\n            \"dpi\": 300,\n            \"uploadTime\": \"2023-07-31T06:57:14.534\",\n            \"filename\": \"newspaper8.xml\"\n        },\n        {\n            \"id\": 10,\n            \"newspaperName\": \"Washington Post\",\n            \"width\": 720,\n            \"height\": 1280,\n            \"dpi\": 400,\n            \"uploadTime\": \"2023-07-31T06:57:23.534\",\n            \"filename\": \"newspaper4.xml\"\n        }\n    ],\n    \"pageable\": {\n        \"sort\": {\n            \"sorted\": true,\n            \"empty\": false,\n            \"unsorted\": false\n        },\n        \"pageNumber\": 0,\n        \"pageSize\": 10,\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"totalElements\": 28,\n    \"last\": false,\n    \"totalPages\": 3,\n    \"first\": true,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"sorted\": true,\n        \"empty\": false,\n        \"unsorted\": false\n    },\n    \"numberOfElements\": 10,\n    \"empty\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/xml/xml-content?page=1&size=10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"page\":0,\r\n    \"size\":15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/xml/xml-content",
+				"description": "To get data by pagination as page as 0 and total number of records to show on page is 15."
+			},
+			"response": [
+				{
+					"name": "response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page\":0,\r\n    \"size\":15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/xml/xml-content?page=0&size=10&\"sortBy\":\"newspaperName\"",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"xml",
+								"xml-content"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								},
+								{
+									"key": "\"sortBy\":\"newspaperName\"",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 03 Aug 2023 21:02:34 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"content\": [\n        {\n            \"id\": 1,\n            \"newspaperName\": \"Times\",\n            \"width\": 1280,\n            \"height\": 752,\n            \"dpi\": 160,\n            \"uploadTime\": \"2023-07-28T12:38:00.236\",\n            \"filename\": \"abc.xml\"\n        },\n        {\n            \"id\": 2,\n            \"newspaperName\": \"Times Of India\",\n            \"width\": 1280,\n            \"height\": 752,\n            \"dpi\": 160,\n            \"uploadTime\": \"2023-07-28T12:49:24.152\",\n            \"filename\": \"TimeOfIndia.xml\"\n        },\n        {\n            \"id\": 3,\n            \"newspaperName\": \"London Times\",\n            \"width\": 1250,\n            \"height\": 850,\n            \"dpi\": 200,\n            \"uploadTime\": \"2023-07-28T14:06:46.022\",\n            \"filename\": \"LondonTimes.xml\"\n        },\n        {\n            \"id\": 4,\n            \"newspaperName\": \"Washington Post\",\n            \"width\": 720,\n            \"height\": 1280,\n            \"dpi\": 400,\n            \"uploadTime\": \"2023-07-28T14:07:08.003\",\n            \"filename\": \"Washington.xml\"\n        },\n        {\n            \"id\": 5,\n            \"newspaperName\": \"The Guardian\",\n            \"width\": 1920,\n            \"height\": 1080,\n            \"dpi\": 150,\n            \"uploadTime\": \"2023-07-28T14:08:40.392\",\n            \"filename\": \"Guardian.xml\"\n        },\n        {\n            \"id\": 6,\n            \"newspaperName\": \"New York Times\",\n            \"width\": 1024,\n            \"height\": 768,\n            \"dpi\": 300,\n            \"uploadTime\": \"2023-07-28T14:08:54.868\",\n            \"filename\": \"NeyYorkTimes.xml\"\n        },\n        {\n            \"id\": 7,\n            \"newspaperName\": \"Times of India\",\n            \"width\": 800,\n            \"height\": 600,\n            \"dpi\": 300,\n            \"uploadTime\": \"2023-07-28T14:09:19.851\",\n            \"filename\": \"TimeOfIndia.xml\"\n        },\n        {\n            \"id\": 8,\n            \"newspaperName\": \"Financial Times\",\n            \"width\": 240,\n            \"height\": 240,\n            \"dpi\": 200,\n            \"uploadTime\": \"2023-07-28T14:09:26.586\",\n            \"filename\": \"FinancialTimes.xml\"\n        },\n        {\n            \"id\": 9,\n            \"newspaperName\": \"The Times of London\",\n            \"width\": 1440,\n            \"height\": 1920,\n            \"dpi\": 300,\n            \"uploadTime\": \"2023-07-28T14:09:32.711\",\n            \"filename\": \"TimesOfLondon.xml\"\n        },\n        {\n            \"id\": 10,\n            \"newspaperName\": \"USA Today\",\n            \"width\": 1080,\n            \"height\": 2400,\n            \"dpi\": 400,\n            \"uploadTime\": \"2023-07-28T14:09:38.011\",\n            \"filename\": \"USAToday.xml\"\n        },\n        {\n            \"id\": 11,\n            \"newspaperName\": \"The Wall Street Journal\",\n            \"width\": 600,\n            \"height\": 800,\n            \"dpi\": 200,\n            \"uploadTime\": \"2023-07-28T14:09:49.46\",\n            \"filename\": \"WallStreet.xml\"\n        },\n        {\n            \"id\": 12,\n            \"newspaperName\": \"BBC News\",\n            \"width\": 1600,\n            \"height\": 900,\n            \"dpi\": 120,\n            \"uploadTime\": \"2023-07-28T14:09:55.203\",\n            \"filename\": \"BBC.xml\"\n        },\n        {\n            \"id\": 13,\n            \"newspaperName\": \"BBC News\",\n            \"width\": 1600,\n            \"height\": 900,\n            \"dpi\": 120,\n            \"uploadTime\": \"2023-07-28T16:55:31.31\",\n            \"filename\": \"newspaper13.xml\"\n        },\n        {\n            \"id\": 14,\n            \"newspaperName\": \"BBC News\",\n            \"width\": 1600,\n            \"height\": 900,\n            \"dpi\": 120,\n            \"uploadTime\": \"2023-07-28T17:28:53.155\",\n            \"filename\": \"newspaper13.xml\"\n        },\n        {\n            \"id\": 15,\n            \"newspaperName\": \"Times of India\",\n            \"width\": 800,\n            \"height\": 600,\n            \"dpi\": 300,\n            \"uploadTime\": \"2023-07-29T19:20:03.838\",\n            \"filename\": \"newspaper6.xml\"\n        }\n    ],\n    \"pageable\": {\n        \"sort\": {\n            \"empty\": false,\n            \"sorted\": true,\n            \"unsorted\": false\n        },\n        \"offset\": 0,\n        \"pageNumber\": 0,\n        \"pageSize\": 15,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"totalPages\": 2,\n    \"last\": false,\n    \"totalElements\": 24,\n    \"size\": 15,\n    \"number\": 0,\n    \"sort\": {\n        \"empty\": false,\n        \"sorted\": true,\n        \"unsorted\": false\n    },\n    \"numberOfElements\": 15,\n    \"first\": true,\n    \"empty\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/xml/xml-content",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"sortBy\":\"newspaperName , width\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/xml/xml-content",
+				"description": "To Sort the data by multiple attributes like newspaperName and width."
+			},
+			"response": [
+				{
+					"name": "response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n    \"sortBy\":\"newspaperName\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/xml/xml-content?page=1&size=24",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"xml",
+								"xml-content"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "24"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 04 Aug 2023 06:09:01 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"content\": [\n        {\n            \"id\": 22,\n            \"newspaperName\": \"12345\",\n            \"width\": 1920,\n            \"height\": 1080,\n            \"dpi\": 300,\n            \"uploadTime\": \"2023-08-03T22:28:36.162\",\n            \"filename\": \"test.xml\"\n        },\n        {\n            \"id\": 26,\n            \"newspaperName\": \"12345\",\n            \"width\": 1920,\n            \"height\": 1080,\n            \"dpi\": 300,\n            \"uploadTime\": \"2023-08-04T02:52:51.096\",\n            \"filename\": \"test.xml\"\n        },\n        {\n            \"id\": 12,\n            \"newspaperName\": \"BBC News\",\n            \"width\": 1600,\n            \"height\": 900,\n            \"dpi\": 120,\n            \"uploadTime\": \"2023-07-28T14:09:55.203\",\n            \"filename\": \"BBC.xml\"\n        },\n        {\n            \"id\": 13,\n            \"newspaperName\": \"BBC News\",\n            \"width\": 1600,\n            \"height\": 900,\n            \"dpi\": 120,\n            \"uploadTime\": \"2023-07-28T16:55:31.31\",\n            \"filename\": \"newspaper13.xml\"\n        },\n        {\n            \"id\": 14,\n            \"newspaperName\": \"BBC News\",\n            \"width\": 1600,\n            \"height\": 900,\n            \"dpi\": 120,\n            \"uploadTime\": \"2023-07-28T17:28:53.155\",\n            \"filename\": \"newspaper13.xml\"\n        },\n        {\n            \"id\": 19,\n            \"newspaperName\": \"BBC News\",\n            \"width\": 1600,\n            \"height\": 900,\n            \"dpi\": 120,\n            \"uploadTime\": \"2023-08-01T22:52:44.906\",\n            \"filename\": \"abcfile.xml\"\n        },\n        {\n            \"id\": 8,\n            \"newspaperName\": \"Financial Times\",\n            \"width\": 240,\n            \"height\": 240,\n            \"dpi\": 200,\n            \"uploadTime\": \"2023-07-28T14:09:26.586\",\n            \"filename\": \"FinancialTimes.xml\"\n        },\n        {\n            \"id\": 3,\n            \"newspaperName\": \"London Times\",\n            \"width\": 1250,\n            \"height\": 850,\n            \"dpi\": 200,\n            \"uploadTime\": \"2023-07-28T14:06:46.022\",\n            \"filename\": \"LondonTimes.xml\"\n        },\n        {\n            \"id\": 25,\n            \"newspaperName\": \"London Times\",\n            \"width\": 1250,\n            \"height\": 850,\n            \"dpi\": 200,\n            \"uploadTime\": \"2023-08-04T02:51:43.406\",\n            \"filename\": \"newspaper2.xml\"\n        },\n        {\n            \"id\": 27,\n            \"newspaperName\": \"London Times\",\n            \"width\": 1250,\n            \"height\": 850,\n            \"dpi\": 200,\n            \"uploadTime\": \"2023-08-04T02:54:50.911\",\n            \"filename\": \"newspaper2.xml\"\n        }\n    ],\n    \"pageable\": {\n        \"sort\": {\n            \"empty\": false,\n            \"sorted\": true,\n            \"unsorted\": false\n        },\n        \"offset\": 0,\n        \"pageSize\": 10,\n        \"pageNumber\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"last\": false,\n    \"totalElements\": 27,\n    \"totalPages\": 3,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"empty\": false,\n        \"sorted\": true,\n        \"unsorted\": false\n    },\n    \"numberOfElements\": 10,\n    \"first\": true,\n    \"empty\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/xml/xml-content",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"newspaperName\": \"Times\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/xml/xml-content",
+				"description": "To filter the data via particular one attribute like newspaperName."
+			},
+			"response": [
+				{
+					"name": "response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"width\": 800,\r\n    \"height\": 600\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/xml/xml-content?page=1&size=24",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"xml",
+								"xml-content"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "24"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 04 Aug 2023 06:23:59 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"content\": [\n        {\n            \"id\": 7,\n            \"newspaperName\": \"Times of India\",\n            \"width\": 800,\n            \"height\": 600,\n            \"dpi\": 300,\n            \"uploadTime\": \"2023-07-28T14:09:19.851\",\n            \"filename\": \"TimeOfIndia.xml\"\n        },\n        {\n            \"id\": 15,\n            \"newspaperName\": \"Times of India\",\n            \"width\": 800,\n            \"height\": 600,\n            \"dpi\": 300,\n            \"uploadTime\": \"2023-07-29T19:20:03.838\",\n            \"filename\": \"newspaper6.xml\"\n        }\n    ],\n    \"pageable\": {\n        \"sort\": {\n            \"empty\": false,\n            \"sorted\": true,\n            \"unsorted\": false\n        },\n        \"offset\": 0,\n        \"pageSize\": 10,\n        \"pageNumber\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"last\": true,\n    \"totalElements\": 2,\n    \"totalPages\": 1,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"empty\": false,\n        \"sorted\": true,\n        \"unsorted\": false\n    },\n    \"numberOfElements\": 2,\n    \"first\": true,\n    \"empty\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/xml/xml-content",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 7,\r\n    \"newspaperName\": \"Times of India\",\r\n    \"width\": 800,\r\n    \"height\": 600,\r\n    \"dpi\": 300,\r\n    \"uploadTime\": \"2023-07-28T14:09:19.851\",\r\n    \"filename\": \"TimeOfIndia.xml\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/xml/xml-content",
+				"description": "To filter the data with multiple attributes."
+			},
+			"response": [
+				{
+					"name": "response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 7,\r\n    \"newspaperName\": \"Times of India\",\r\n    \"width\": 800,\r\n    \"height\": 600,\r\n    \"dpi\": 300,\r\n    \"uploadTime\": \"2023-07-28T14:09:19.851\",\r\n    \"filename\": \"TimeOfIndia.xml\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/xml/xml-content"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 04 Aug 2023 05:53:17 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"content\": [\n        {\n            \"id\": 7,\n            \"newspaperName\": \"Times of India\",\n            \"width\": 800,\n            \"height\": 600,\n            \"dpi\": 300,\n            \"uploadTime\": \"2023-07-28T14:09:19.851\",\n            \"filename\": \"TimeOfIndia.xml\"\n        }\n    ],\n    \"pageable\": {\n        \"sort\": {\n            \"empty\": false,\n            \"sorted\": true,\n            \"unsorted\": false\n        },\n        \"offset\": 0,\n        \"pageSize\": 10,\n        \"pageNumber\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"last\": true,\n    \"totalElements\": 1,\n    \"totalPages\": 1,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"empty\": false,\n        \"sorted\": true,\n        \"unsorted\": false\n    },\n    \"numberOfElements\": 1,\n    \"first\": true,\n    \"empty\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/xml/upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/newspaper2.xml"
+						}
+					]
+				},
+				"url": "localhost:8080/xml/upload",
+				"description": "To upload a Xml File ."
+			},
+			"response": [
+				{
+					"name": "error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/newspaper5.xml"
+								}
+							]
+						},
+						"url": "localhost:8080/xml/upload"
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 04 Aug 2023 06:16:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "Validation error: DPI must be greater than or equal to 1"
+				},
+				{
+					"name": "response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/newspaper4.xml"
+								}
+							]
+						},
+						"url": "localhost:8080/xml/upload"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 04 Aug 2023 06:25:19 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "XML file uploaded and processed successfully."
+				}
+			]
+		}
+	]
+}
